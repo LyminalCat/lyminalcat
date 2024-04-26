@@ -1,7 +1,7 @@
 <script>
   /* navigation sub-menu display */
 // Change 'hover' to 'click' if you want to
-$('#role-one li > .subrole').parent().click(function() {
+$('.role-one li > .subrole').parent().click(function() {
   var submenu = $(this).children('.subrole');
   if ( $(submenu).is(':hidden') ) {
     $(submenu).slideDown(200);
@@ -11,12 +11,13 @@ $('#role-one li > .subrole').parent().click(function() {
 });
 </script>
 <style>
-  .subrole {display:none;}
+  .menu-one > li {float:left;}
+  .menu-one .subrole {display:none;}
 </style>
 <body>
 <div id="mobilenav">
-  <ul id="menu-one">
-    <li id="role-one"><a href="#">Writer</a>
+  <ul class="menu-one">
+    <li><a href="#">Writer</a>
       <ul class="subrole">
         <li id="role-one_sub-one"><a href="/writer-technical-writing">Technical Writing</a></li>
         <li id="role-one_sub-two"><a href="/writer-comics">Comics</a></li>
