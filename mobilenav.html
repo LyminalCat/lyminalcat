@@ -1,7 +1,7 @@
 <script>
   /* navigation sub-menu display */
 // Change 'hover' to 'click' if you want to
-$('.menu-one li > .subrole').parent().click(function() {
+$('.menu-one li > .subrole').parent().hover(function() {
   var submenu = $(this).children('.subrole');
   if ( $(submenu).is(':hidden') ) {
     $(submenu).slideDown(200);
